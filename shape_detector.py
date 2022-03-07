@@ -66,11 +66,7 @@ def getContours(img):
 if __name__ == '__main__':
     path = 'shapes.png'
     img = cv.imread(path)
-    cv.imshow("imahs", img)
-    if img is None:
-        print("fuck")
-    else:
-        imgContour = img.copy()
+    imgContour = img.copy()
 
     imgGray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
     imgBlur = cv.GaussianBlur(imgGray, (7, 7), 1)
